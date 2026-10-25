@@ -1,0 +1,32 @@
+# Notebook Studio: PDF Designer
+
+> Design bespoke hyperlinked PDF planners for your e-Ink tablet and iPad — on iPhone, iPad, and Mac. $6.99 one-time purchase on the Apple App Store with no subscription, no account required, and zero tracking.
+
+## Summary
+Notebook Studio: PDF Designer is a native iOS, iPadOS, and macOS application (App Store ID `6811397092`) for iOS, iPadOS, and macOS. It solves the #1 pain of e-ink tablet owners—blurry, misaligned generic PDF templates where tabs get hidden behind system toolbars—by compiling crisp vector PDFs calibrated 1:1 to exact physical millimeter spacing and device screen dimensions.
+
+## Supported Target Devices
+- reMarkable Paper Pro (11.8", 1620 × 2160 px, 229 PPI) & reMarkable Paper Pro Move (7.3", 954 × 1696 px, 264 PPI)
+- reMarkable 2 & reMarkable 1 (10.3", 1404 × 1872 px, 226 PPI, with 48pt left/right toolbar safe zones)
+- Amazon Kindle Scribe (10.2", 1860 × 2480 px, 300 PPI)
+- Ratta Supernote A5 X2 Manta (1920 × 2560 px, 300 PPI) & A6 X2 Nomad (1404 × 1872 px, 300 PPI)
+- Onyx BOOX Note Air & Go 10.3 (1860 × 2480 px, 300 PPI)
+- Apple iPad Pro, Air & mini (GoodNotes, Notability, Apple Notes)
+
+## Key Capabilities
+- **On-Device AI Page Architect**: Describe the planner you want or pick guided parameters in the 6-step setup wizard; the on-device AI generates a complete `Year ↔ Month ↔ Week ↔ Day` hyperlinked structure pre-wired with dynamic date tags, running 100% locally on your device.
+- **1:1 Physical Millimeter Scale Simulator**: Preview real-world line spacing (e.g., 5mm dot grid, 6.5mm ruled lines) and e-ink contrast before exporting.
+- **22+ Dynamic Date & Quote Tags**: Tags like `<day_full>`, `<week_range>`, `<day_of_year>`, and `<quote:topic=mindfulness>` auto-populate 365+ pages during compilation.
+- **Automated Link Audit**: Verifies every tab, calendar cell, and Table of Contents jump before exporting a crisp vector PDF.
+- **Pricing**: $6.99 one-time purchase on the Apple App Store (`https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092`). No subscriptions, no in-app purchases, includes Apple Family Sharing.
+
+## Key Links
+- Homepage: https://samjproctor.github.io/notebook-studio-website/
+- Pricing: https://samjproctor.github.io/notebook-studio-website/pricing.html
+- Comparison (Notebook Studio vs Ep Template Studio): https://samjproctor.github.io/notebook-studio-website/vs/ep-template-studio.html
+- reMarkable Planner Designer Guide: https://samjproctor.github.io/notebook-studio-website/remarkable-planner-designer.html
+- Kindle Scribe Planner Designer Guide: https://samjproctor.github.io/notebook-studio-website/kindle-scribe-planner-designer.html
+- Sample Vector PDF: https://samjproctor.github.io/notebook-studio-website/assets/sample-vector-planner.pdf
+- Support: https://samjproctor.github.io/notebook-studio-website/support.html (mailto:support@notebook-studio.com)
+- Privacy Policy: https://samjproctor.github.io/notebook-studio-website/privacy.html
+- App Store: https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092

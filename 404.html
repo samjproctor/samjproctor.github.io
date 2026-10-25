@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Page Not Found — Notebook Studio: PDF Designer</title>
+  <meta name="description" content="Notebook Studio: PDF Designer for iPhone, iPad, and Mac.">
+  <link rel="canonical" href="https://samjproctor.github.io/notebook-studio-website/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Notebook Studio: PDF Designer">
+  <meta property="og:description" content="Design bespoke hyperlinked PDF planners calibrated 1:1 on iPhone, iPad &amp; Mac.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Design bespoke hyperlinked PDF planners calibrated 1:1 on iPhone, iPad &amp; Mac.">
+
+  <link rel="icon" type="image/svg+xml" href="/notebook-studio-website/assets/icons/app-logo.svg">
+  <link rel="stylesheet" href="/notebook-studio-website/styles.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="module">
+    import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.3';
+
+    analytics.init({
+      projectKey: 'hck_pk_Mr3rc7qC2evDjixgxFK5U9Qc_7A5M3E7',
+      requestBatching: false,
+      install: {
+        framework: 'web',
+        agent: 'other',
+      },
+    });
+  </script>
+</head>
+<body>
+  <header class="site-header" id="dynamic-header" hidden>
+    <div class="container nav-inner">
+      <a href="/notebook-studio-website/" class="brand-lockup" id="header-home-link" aria-label="Notebook Studio Home">
+        <img src="/notebook-studio-website/assets/icons/app-logo.svg" alt="Notebook Studio App Icon" class="brand-logo" width="40" height="40">
+        <span>Notebook Studio</span>
+        <span class="brand-badge">iPhone, iPad &amp; Mac</span>
+      </a>
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="/notebook-studio-website/#features">Studio Features</a></li>
+          <li><a href="/notebook-studio-website/#devices">Supported Tablets</a></li>
+          <li><a href="/notebook-studio-website/pricing.html">Pricing ($6.99)</a></li>
+          <li class="nav-blog-item" hidden><a href="/notebook-studio-website/blog">Blog</a></li>
+          <li><a href="/notebook-studio-website/support.html">Support</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>Get the App • $6.99</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section" id="main-404-wrap" style="margin: auto; text-align: center;">
+    <div class="container" id="main-404-container" style="max-width: 36rem;">
+      <div class="eyebrow-pill">404</div>
+      <h1 class="section-title">Page Not Found</h1>
+      <p class="section-subtitle" style="margin-bottom: 2rem;">
+        The page you requested could not be found. Return to the Notebook Studio home page or download the app on the App Store.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/notebook-studio-website/" class="btn btn-primary">Return Home</a>
+        <a href="https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Download on App Store</a>
+      </div>
+    </div>
+  </main>
+
+  <script type="module">
+    // HEYCATCH_API_KEY=hck_lv_c8fc952c1efb370b5f7aa1f4
+    // GET https://api.heycatch.ai/v1/articles?key=hck_lv_c8fc952c1efb370b5f7aa1f4&limit=50&offset=0
+    // If the visitor requested /blog/{slug} on static GitHub Pages, render the live HeyCatch article in-place
+    const pathMatch = window.location.pathname.match(/\/blog\/([^\/]+)\/?$/);
+    if (pathMatch && pathMatch[1] && pathMatch[1] !== 'index.html' && pathMatch[1] !== 'post.html') {
+      const slug = decodeURIComponent(pathMatch[1]);
+      const isSubpath = window.location.pathname.startsWith('/notebook-studio-website');
+      const basePath = isSubpath ? '/notebook-studio-website' : '';
+
+      const headerEl = document.getElementById('dynamic-header');
+      if (headerEl) headerEl.removeAttribute('hidden');
+
+      const mainWrap = document.getElementById('main-404-wrap');
+      const containerEl = document.getElementById('main-404-container');
+      if (mainWrap) mainWrap.style.textAlign = 'start';
+      if (containerEl) {
+        containerEl.style.maxWidth = '52rem';
+        containerEl.className = 'container blog-shell';
+      }
+
+      import(`${basePath}/assets/js/heycatch-blog.js`).then(({ initBlogNavigation, renderBlogArticlePage, renderBlogIndexPage }) => {
+        initBlogNavigation();
+        renderBlogArticlePage(containerEl, slug, {
+          basePath,
+          onBackToIndex: () => {
+            window.location.href = `${basePath}/blog`;
+          }
+        });
+      }).catch(() => {
+        // Keep default 404 view if script cannot load
+      });
+    }
+  </script>
+</body>
+</html>

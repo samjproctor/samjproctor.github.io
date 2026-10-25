@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Blog — Notebook Studio</title>
+  <meta name="description" content="Guides, workflows, and digital stationery tips for designing custom hyperlinked PDF planners for reMarkable Paper Pro, reMarkable 2, Kindle Scribe, Supernote, BOOX, and iPad.">
+  <link rel="canonical" href="https://samjproctor.github.io/blog">
+  <meta name="apple-itunes-app" content="app-id=6811397092">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://samjproctor.github.io/blog">
+  <meta property="og:title" content="Blog — Notebook Studio">
+  <meta property="og:description" content="Guides, workflows, and digital stationery tips for designing custom hyperlinked PDF planners for e-Ink tablets and iPad.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Guides, workflows, and digital stationery tips for designing custom hyperlinked PDF planners for e-Ink tablets and iPad.">
+
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/app-logo.svg">
+  <link rel="icon" type="image/png" sizes="58x58" href="../assets/icons/favicon-58.png">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="module">
+    import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.3';
+
+    analytics.init({
+      projectKey: 'hck_pk_Mr3rc7qC2evDjixgxFK5U9Qc_7A5M3E7',
+      requestBatching: false,
+      install: {
+        framework: 'web',
+        agent: 'other',
+      },
+    });
+  </script>
+  <script type="application/ld+json" id="shared-org-jsonld">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "notebook-studio.com",
+    "alternateName": "Notebook Studio",
+    "url": "https://www.notebook-studio.com",
+    "logo": "https://samjproctor.github.io/notebook-studio-website/assets/icons/app-icon-1024.png",
+    "email": "support@notebook-studio.com",
+    "sameAs": [
+      "https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092",
+      "https://samjproctor.github.io/notebook-studio-website/",
+      "https://www.notebook-studio.com"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-lockup" aria-label="Notebook Studio Home">
+        <img src="../assets/icons/app-logo.svg" alt="Notebook Studio App Icon" class="brand-logo" width="40" height="40">
+        <span>Notebook Studio</span>
+        <span class="brand-badge">iPhone, iPad &amp; Mac</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html#iphone-showcase">App Walkthrough</a></li>
+          <li><a href="../index.html#features">Studio Features</a></li>
+          <li><a href="../index.html#devices">Supported Tablets</a></li>
+          <li><a href="../pricing.html">Pricing ($6.99)</a></li>
+          <li class="nav-blog-item" hidden><a href="../blog">Blog</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../support.html">Support</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle color theme" title="Toggle light/dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+        </button>
+        <a href="https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3z"/>
+          </svg>
+          <span>Get the App • $6.99</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container blog-shell" id="blog-post-mount">
+      <p class="blog-loading-text">Loading article…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-lockup" style="margin-bottom: 0.5rem;">
+          <img src="../assets/icons/app-logo.svg" alt="Notebook Studio Logo" class="brand-logo" width="32" height="32" loading="lazy">
+          <span>Notebook Studio: PDF Designer</span>
+        </div>
+        <p>© 2026 Notebook Studio. All rights reserved. • Built for iPhone, iPad &amp; Mac.</p>
+        <p style="margin-top: 0.25rem;">
+          $6.99 one-time purchase on the App Store • Support: <a href="mailto:support@notebook-studio.com" style="color: var(--brand-accent); font-weight: 600;">support@notebook-studio.com</a>
+        </p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092" target="_blank" rel="noopener noreferrer">App Store ($6.99)</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li class="nav-blog-item" hidden><a href="../blog">Blog</a></li>
+        <li><a href="../vs/ep-template-studio.html">vs Ep Template Studio</a></li>
+        <li><a href="../support.html">Support Center</a></li>
+        <li><a href="../about.html">About notebook-studio.com</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Inline HeyCatch Blog configuration & loader for https://api.heycatch.ai/v1/articles?key=hck_lv_c8fc952c1efb370b5f7aa1f4 -->
+  <script type="module">
+    import {
+      HEYCATCH_API_KEY,
+      HEYCATCH_API_BASE,
+      getSiteBasePath,
+      initBlogNavigation,
+      renderBlogArticlePage,
+      renderBlogIndexPage
+    } from '../assets/js/heycatch-blog.js';
+
+    window.__HEYCATCH_BLOG_CONFIG__ = {
+      key: HEYCATCH_API_KEY || 'hck_lv_c8fc952c1efb370b5f7aa1f4',
+      apiBase: HEYCATCH_API_BASE || 'https://api.heycatch.ai/v1'
+    };
+
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('theme-toggle-btn');
+    const savedTheme = localStorage.getItem('ns-theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      root.setAttribute('data-theme', savedTheme);
+    }
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const effectiveDark = current ? current === 'dark' : systemDark;
+        const nextTheme = effectiveDark ? 'light' : 'dark';
+        root.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('ns-theme', nextTheme);
+      });
+    }
+
+    initBlogNavigation();
+
+    const mountEl = document.getElementById('blog-post-mount');
+    const basePath = getSiteBasePath();
+    const params = new URLSearchParams(window.location.search);
+    let slug = params.get('slug');
+    if (!slug) {
+      const match = window.location.pathname.match(/\/blog\/([^\/]+)\/?$/);
+      if (match && match[1] && match[1] !== 'post.html' && match[1] !== 'index.html') {
+        slug = decodeURIComponent(match[1]);
+      }
+    }
+
+    if (slug) {
+      renderBlogArticlePage(mountEl, slug, { basePath });
+    } else {
+      renderBlogIndexPage(mountEl, { basePath });
+    }
+  </script>
+</body>
+</html>

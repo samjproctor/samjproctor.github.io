@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.notebook-studio.com/sitemap.xml
+Sitemap: https://samjproctor.github.io/sitemap.xml
+Sitemap: https://samjproctor.github.io/notebook-studio-website/sitemap.xml
