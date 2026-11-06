@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>How to Build a Planner Template for GoodNotes From Scratch</title>
+  <meta name="description" content="Build a planner template for GoodNotes at your device's native resolution: exact canvas sizes, dot-grid spacing, working hyperlinks, and a full-year layout.">
+  <link rel="canonical" href="https://samjproctor.github.io/blog/build-planner-template-goodnotes">
+  <meta name="apple-itunes-app" content="app-id=6811397092">
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://samjproctor.github.io/blog/build-planner-template-goodnotes">
+  <meta property="og:title" content="How to Build a Planner Template for GoodNotes From Scratch">
+  <meta property="og:description" content="Build a planner template for GoodNotes at your device's native resolution: exact canvas sizes, dot-grid spacing, working hyperlinks, and a full-year layout.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:description" content="Build a planner template for GoodNotes at your device's native resolution: exact canvas sizes, dot-grid spacing, working hyperlinks, and a full-year layout.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "notebook-studio.com",
+    "alternateName": "Notebook Studio",
+    "url": "https://www.notebook-studio.com",
+    "logo": "https://samjproctor.github.io/notebook-studio-website/assets/icons/app-icon-1024.png",
+    "email": "support@notebook-studio.com",
+    "sameAs": [
+      "https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092",
+      "https://samjproctor.github.io/notebook-studio-website/",
+      "https://www.notebook-studio.com"
+    ]
+  }
+  </script>
+  <script type="application/ld+json" id="heycatch-article-jsonld">{"@context":"https://schema.org","@type":"BlogPosting","headline":"How to Build a Planner Template for GoodNotes From Scratch","description":"Build a planner template for GoodNotes at your device's native resolution: exact canvas sizes, dot-grid spacing, working hyperlinks, and a full-year layout.","datePublished":"2026-11-06","dateModified":"2026-11-06","inLanguage":"en","keywords":"planner template for goodnotes, free goodnotes planner template, goodnotes planner template, create digital planner for goodnotes, student planner template goodnotes free, study planner template goodnotes, template planner goodnotes, weekly planner template for goodnotes, weekly planner template goodnotes free","url":"https://samjproctor.github.io/blog/build-planner-template-goodnotes","mainEntityOfPage":{"@type":"WebPage","@id":"https://samjproctor.github.io/blog/build-planner-template-goodnotes"},"publisher":{"@type":"Organization","name":"samjproctor.github.io","url":"https://samjproctor.github.io"}}</script>
+
+  <link rel="icon" type="image/svg+xml" href="../assets/icons/app-logo.svg">
+  <link rel="icon" type="image/png" sizes="58x58" href="../assets/icons/favicon-58.png">
+  <link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <script type="module">
+    import { analytics } from 'https://esm.sh/@heycatch/sdk@0.8.3';
+
+    analytics.init({
+      projectKey: 'hck_pk_Mr3rc7qC2evDjixgxFK5U9Qc_7A5M3E7',
+      requestBatching: false,
+      install: {
+        framework: 'web',
+        agent: 'other',
+      },
+    });
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="../index.html" class="brand-lockup" aria-label="Notebook Studio Home">
+        <img src="../assets/icons/app-logo.svg" alt="Notebook Studio App Icon" class="brand-logo" width="40" height="40">
+        <span>Notebook Studio</span>
+        <span class="brand-badge">iPhone, iPad &amp; Mac</span>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html#iphone-showcase">App Walkthrough</a></li>
+          <li><a href="../index.html#features">Studio Features</a></li>
+          <li><a href="../index.html#devices">Supported Tablets</a></li>
+          <li><a href="../pricing.html">Pricing ($6.99)</a></li>
+          <li class="nav-blog-item"><a href="../blog" aria-current="page">Blog</a></li>
+          <li><a href="../index.html#faq">FAQ</a></li>
+          <li><a href="../support.html">Support</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle color theme" title="Toggle light/dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+        </button>
+        <a href="https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.33c.64-.78 1.08-1.86.96-2.94-.93.04-2.06.62-2.72 1.4-.58.68-1.1 1.79-.96 2.84 1.04.08 2.08-.52 2.72-1.3z"/>
+          </svg>
+          <span>Get the App • $6.99</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="section">
+    <div class="container blog-shell" id="blog-post-mount">
+      <article class="blog-article">
+        <div class="blog-back-row">
+          <a href="../blog" class="blog-back-link">← Back to Blog</a>
+        </div>
+        <header class="blog-article-header">
+          <h1 class="blog-article-title">How to Build a Planner Template for GoodNotes From Scratch</h1>
+          <div class="blog-meta">
+            <time datetime="2026-11-06">November 6, 2026</time>
+            <span aria-hidden="true">•</span>
+            <span>9 min read</span>
+          </div>
+        </header>
+        <div class="blog-prose">
+          <h2>Key takeaways</h2>
+<ul><li>Design your planner PDF at your device's native pixel resolution, such as 1404 × 1872 for a reMarkable 2 or 1860 × 2480 for a Kindle Scribe, and export as vector PDF.</li><li>Wire hyperlinks in your design tool before export using page-number targets, since GoodNotes reads baked-in PDF link annotations but cannot create them.</li><li>Use a 5 mm dot grid at native PPI, roughly 45 px between dots on a 226 PPI screen, with dots kept at 2-3 px so they stay crisp when zoomed.</li><li>Build one perfect weekly spread, then duplicate it 52 times in GoodNotes' thumbnail view; undated layouts survive skipped weeks and year rollovers.</li><li>Test every hyperlink in a desktop PDF reader before import, because a broken index link across 365 pages is painful to fix later.</li></ul>
+      <nav class="blog-toc" aria-label="Table of contents">
+        <h2 class="blog-toc-title">Table of contents</h2>
+        <ol class="blog-toc-list">
+          <li><a href="#what-canvas-size-and-margins-should-a-goodnotes-planner-template">What canvas size and margins should a GoodNotes planner template use?</a></li>
+          <li><a href="#which-tool-should-you-build-the-template-in">Which tool should you build the template in?</a></li>
+          <li><a href="#how-do-you-lay-out-the-weekly-spread-page-by-page">How do you lay out the weekly spread page by page?</a></li>
+          <li><a href="#how-do-you-add-working-hyperlinks-between-planner-pages-in-goodn">How do you add working hyperlinks between planner pages in GoodNotes?</a></li>
+          <li><a href="#how-do-you-duplicate-and-customize-a-template-across-a-full-year">How do you duplicate and customize a template across a full year?</a></li>
+          <li><a href="#should-you-import-a-pdf-planner-or-build-one-natively-in-goodnot">Should you import a PDF planner or build one natively in GoodNotes?</a></li>
+          <li><a href="#how-does-a-student-study-planner-template-differ-from-a-general">How does a student study planner template differ from a general weekly layout?</a></li>
+          <li><a href="#where-can-you-find-a-free-weekly-planner-template-for-goodnotes">Where can you find a free weekly planner template for GoodNotes?</a></li>
+        </ol>
+      </nav>
+<p>Build a planner template for GoodNotes by designing a hyperlinked PDF at your device's native resolution, then importing it as a custom paper template. This walkthrough covers exact canvas dimensions per device, dot-grid setup, hyperlink wiring between pages, and duplicating the layout across a full year.</p>
+<h2 id="what-canvas-size-and-margins-should-a-goodnotes-planner-template">What canvas size and margins should a GoodNotes planner template use?</h2>
+<p>GoodNotes renders an imported PDF at its native page size, so your canvas should match the hardware you write on. Build at the device's screen resolution in pixels and export as vector PDF; <a href="https://www.goodnotes.com/help">GoodNotes' help documentation</a> covers how imported PDFs keep their page dimensions and how internal links stay clickable after import.</p>
+<h3>Per-device canvas dimensions</h3>
+<table><thead><tr><th>Device</th><th>Canvas (px)</th><th>Notes</th></tr></thead><tbody><tr><td>iPad (landscape)</td><td>2732 × 2048</td><td>Match your screen; scales cleanly</td></tr><tr><td>reMarkable 2</td><td>1404 × 1872</td><td>226 PPI</td></tr><tr><td>reMarkable Paper Pro</td><td>2160 × 2640</td><td>229 PPI</td></tr><tr><td>Supernote A5 X / A5 X2 Manta</td><td>1404 × 1872</td><td>226 PPI</td></tr><tr><td>BOOX Note Air 3 / 3C</td><td>1872 × 1404</td><td>Landscape natively</td></tr><tr><td>BOOX Go 10.3</td><td>2100 × 1575</td><td>300 PPI</td></tr><tr><td>Kindle Scribe</td><td>1860 × 2480</td><td>300 PPI</td></tr><tr><td>Kobo Elipsa 2E</td><td>1404 × 1872</td><td>227 PPI</td></tr></tbody></table>
+<p>Confirm the exact figure for your model in the device settings before you commit; firmware updates occasionally change it.</p>
+<h3>Margin and dot-grid spacing that survives zooming</h3>
+<p>Set outer margins to roughly 10% of the shorter edge (about 140 px on a 1404 px canvas) so palm rests and page-turning zones stay clear. Use a 5 mm dot grid at native PPI: on a 226 PPI panel that is about 45 px between dots, which aligns with the 5 mm grid on Supernote and reMarkable stock templates. Keep dots at 2-3 px so they stay crisp when zoomed. Tools like Notebook Studio export at native hardware resolutions with vector output, and its comparison with <a href="https://notebook-studio.com/vs/ep-template-studio.html">Ep Template Studio</a> covers where each falls short on canvas control.</p>
+<h2 id="which-tool-should-you-build-the-template-in">Which tool should you build the template in?</h2>
+<h3>Comparison criteria</h3>
+<p>Judge every tool on four things: how you pay, whether output stays vector, whether you can wire hyperlinks between pages, and whether it knows your device's native resolution. A planner template that ships as a scaled screenshot will look soft on a BOOX Go 10.3's 300 PPI panel no matter how good the layout is.</p>
+<h3>Where each tool falls short, including Notebook Studio</h3>
+<p>Canva and Adobe Express are general design tools: no e-ink device presets, limited or no interactive link export, and output quality depends on export settings you have to get right yourself. hyperpaper and Ep Template Studio are built for this exact job, which is their strength and their ceiling: you work inside their template logic rather than drawing your own layout from a blank canvas. Vectorize 2 converts existing files rather than designing them.</p>
+<p>Notebook Studio gives you a studio canvas editor, vector export, hyperlink wiring, and native hardware resolutions for reMarkable, Supernote, Kindle Scribe, BOOX, Kobo, and iPad. Where it falls short: it is built for planner and notebook pages, so if you need poster-scale or print-shop artwork you will outgrow it, and its template logic is narrower than hyperpaper's preset-driven workflow. If a link misbehaves after export, the fixes are documented in the <a href="https://notebook-studio.com/support.html">e-Ink PDF Planner Support &amp; FAQ</a>.</p>
+<h2 id="how-do-you-lay-out-the-weekly-spread-page-by-page">How do you lay out the weekly spread page by page?</h2>
+<p>Build the spread as a fixed sequence so hyperlinks always have a target. The seven-page minimum structure: cover, index, weekly grid, five daily pages, with a notes page as page eight if you want overflow space. Every page gets a back-link to the index in the same corner position, so muscle memory works even before you look.</p>
+<p>On an 11-inch iPad Pro, GoodNotes canvas is 1668 × 2388 points at 264 PPI (<a href="https://www.apple.com/ipad-pro/specs/">Apple's iPad specifications page</a> lists display resolutions per model). Set margins at roughly 60 points so your palm doesn't cover content while writing.</p>
+<p>What makes a layout usable daily: the weekly grid needs seven equal columns with a notes strip, not decorative headers. Daily pages need three zones: time column, task list, and a small back-link arrow. Keep dot grid spacing consistent across all pages, typically 5 mm.</p>
+<p>If you'd rather wire hyperlinks in a dedicated editor than place them manually in GoodNotes, the walkthroughs on our <a href="https://notebook-studio.com/blog">blog</a> cover the full process.</p>
+<h2 id="how-do-you-add-working-hyperlinks-between-planner-pages-in-goodn">How do you add working hyperlinks between planner pages in GoodNotes?</h2>
+<p>GoodNotes reads the link annotations already baked into your PDF, so wire navigation in your design tool before export, not after import. Draw invisible rectangles over arrow icons or tab labels, then point each one at a page number inside the same document. Export as a vector PDF and the links carry through.</p>
+<h3>Link targets that survive GoodNotes import</h3>
+<p>Use page-number targets, never named destinations or URLs, for in-document jumps. Index pages should link to each week's spread; each spread needs a forward arrow, a back arrow to the index, and tabs for month and year views. Keep tap zones at least 40 pt tall so your stylus lands on them without precision aiming. If you build in <a href="https://notebook-studio.com/">Notebook Studio</a>, link rectangles are drawn directly on the canvas and export as standard PDF annotations.</p>
+<h3>Testing your links before export</h3>
+<p>Open the exported PDF in any desktop reader and click every link before it touches your tablet. A broken index link across 365 pages is painful to fix later. Re-test one week's spread after import in GoodNotes, since some readers flatten annotations on merge, and re-check after any page reordering.</p>
+<h2 id="how-do-you-duplicate-and-customize-a-template-across-a-full-year">How do you duplicate and customize a template across a full year?</h2>
+<p>Build one perfect week, then multiply it. In GoodNotes, export the finished spread as a PDF, then duplicate pages in the thumbnail view rather than redrawing anything. For a 52-week year, that is one layout, one hyperlink map, and 104 copies.</p>
+<h3>Re-dating without hand-editing 52 pages</h3>
+<p>The cheapest trick is to leave dates off the canvas entirely and write them in by hand each week on your device. If you want printed dates, keep them on a separate text layer in your design tool, edit the layer once per week, and re-export in batches of 13 rather than one page at a time. Tools like <a href="https://notebook-studio.com/remarkable-planner-designer.html">Notebook Studio's reMarkable planner designer</a> handle this differently: you design at the native resolution of your device, such as the reMarkable Paper Pro's 2160 × 1840 display (<a href="https://remarkable.com">reMarkable specs</a>), and the export step stamps dates across the whole year for you.</p>
+<h3>When a dated vs undated template makes sense</h3>
+<p>Dated templates feel finished but break the moment you skip a week. Undated spreads with a small hand-written date box survive missed weeks, year rollovers, and device changes. If you rebuild your setup often, undated wins.</p>
+<h2 id="should-you-import-a-pdf-planner-or-build-one-natively-in-goodnot">Should you import a PDF planner or build one natively in GoodNotes?</h2>
+<p>Importing a hyperlinked PDF wins for e-ink users who want exact hardware resolutions and full-page link navigation. Building natively in GoodNotes is faster to start but locks you into its template editor's limits.</p>
+<h3>What native GoodNotes templates cannot do</h3>
+<p>GoodNotes' built-in template editor handles simple paper styles, but it cannot wire hyperlinks between pages, so you lose the tap-to-jump navigation that makes a digital planner feel like a real one. You also cannot set a custom canvas at a device's native pixel dimensions, like 1,404 × 1,872 for a reMarkable 2, or control dot-grid spacing to the millimetre.</p>
+<p>An imported PDF keeps all of that: precise margins, calibrated dot grids, and year-long hyperlink wiring baked in before it ever opens in GoodNotes. The trade-off is that edits mean returning to your design tool and re-exporting.</p>
+<p>If you want a middle path, tools like Ep Template Studio or hyperpaper generate hyperlinked planner PDFs without hand-drawing every page, and Notebook Studio covers custom device dimensions and vector export directly.</p>
+<h2 id="how-does-a-student-study-planner-template-differ-from-a-general">How does a student study planner template differ from a general weekly layout?</h2>
+<p>A student planner swaps the generic workday grid for three additions: fixed class blocks that repeat every week, an assignment tracker with due dates per course, and an exam countdown column. Keep the same canvas you already built; only the page furniture changes. If you are targeting a Supernote, build the master at its native resolution so lines stay crisp: the A5 X and Manta both use a 1404 × 1872 display at 227 PPI per Supernote's official display specifications.</p>
+<h3>Adding a semester index and course pages</h3>
+<p>Add a semester index page listing each course with a hyperlink to its own course page, then link each course page back to its weekly spread rows. Structure the assignment tracker as one row per deliverable: course code, task, due date, and a checkbox you tick in GoodNotes. For exam countdowns, reserve a narrow right column on the weekly spread and write the days-remaining number by hand each week; it needs no wiring, just a printed header.</p>
+<h2 id="where-can-you-find-a-free-weekly-planner-template-for-goodnotes">Where can you find a free weekly planner template for GoodNotes?</h2>
+<p>r/GoodNotes, r/RemarkableTablet, r/Supernote, and r/Onyx_Boox all have template-sharing threads where members post hyperlinked PDFs they built. Search &quot;weekly&quot; plus your device name and sort by top posts of the year. Device Discord servers are the second-best source because people share calibrated files that already match their screen's PPI.</p>
+<h3>Checklist before you download a free template</h3>
+<p>Test every hyperlink tab before committing pages to it, because a dead index link is the most common defect in shared files. Count the pages: a weekly file should have 12 months, 53 weeks, and a cover, or it is a single spread mislabeled as a planner. Confirm the license allows personal use and redistribution of modified versions. Check the canvas resolution against your device, since a letter-size file letterboxed on a BOOX Go 10.3 wastes margin space and forces awkward zooming. Open the file on your actual tablet, not just a desktop reader, because rendering differs between the two. If nothing fits, building one takes an afternoon, and a purpose-built tool like Notebook Studio or hyperpaper outputs native-resolution vector PDFs you own outright.</p>
+<h2 id="faq">FAQ</h2>
+<h3>Can I use a GoodNotes planner template on a reMarkable or Supernote?</h3>
+<p>Yes, if the PDF matches the device's native resolution. A reMarkable 2 needs 1404 × 1872 px, and the Supernote A5 X and Manta use the same panel. Import the file as a custom template on the e-ink device, and the hyperlinks carry over because standard PDF link annotations survive the transfer.</p>
+<h3>Why do my hyperlinks stop working after importing into GoodNotes?</h3>
+<p>Three usual causes: the links were added after export instead of baked into the PDF beforehand, the export flattened annotations, or the targets used named destinations or URLs rather than page numbers. GoodNotes reads page-number link annotations from the PDF itself, so wire navigation in your design tool and test every link in a desktop reader before import.</p>
+<h3>What resolution should a planner PDF be for the Kindle Scribe?</h3>
+<p>Build at 1860 × 2480 px, which matches the Scribe's 300 PPI panel. Export as a vector PDF so lines stay crisp when zoomed, and keep dots at 2-3 px. Confirm the figure in your device settings first, since firmware updates occasionally change display specifications.</p>
+<h3>Is a hyperlinked planner PDF worth the extra build time?</h3>
+<p>For anything beyond a single spread, yes. Tapping an index to jump to any week replaces scrolling through hundreds of pages, and one hyperlink map serves all 52 duplicated weeks. The cost is front-loaded: you wire links once, test once, then copy the layout. Undated designs make the payoff last across years and device changes.</p>
+<h3>How do I make my own dot grid page size in GoodNotes?</h3>
+<p>GoodNotes' built-in editor only offers preset paper sizes, so create the page externally instead. Design a canvas at your device's native pixel dimensions, place dots at 5 mm spacing, about 45 px on a 226 PPI screen, export as vector PDF, then import it as a custom paper template for exact margins and millimetre-accurate grid control.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand-lockup" style="margin-bottom: 0.5rem;">
+          <img src="../assets/icons/app-logo.svg" alt="Notebook Studio Logo" class="brand-logo" width="32" height="32" loading="lazy">
+          <span>Notebook Studio: PDF Designer</span>
+        </div>
+        <p>© 2026 notebook-studio.com (Notebook Studio). All rights reserved. • Built for iPhone, iPad &amp; Mac.</p>
+        <p style="margin-top: 0.25rem;">
+          <a href="../about.html">About notebook-studio.com</a> · <a href="../contact.html">Contact</a> · <a href="mailto:support@notebook-studio.com" style="color: var(--brand-accent); font-weight: 600;">support@notebook-studio.com</a>
+        </p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="https://apps.apple.com/gb/app/notebook-studio-pdf-designer/id6811397092" target="_blank" rel="noopener noreferrer">App Store ($6.99)</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../blog">Blog</a></li>
+        <li><a href="../about.html">About notebook-studio.com</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../vs/ep-template-studio.html">vs Ep Template Studio</a></li>
+        <li><a href="../support.html">Support Center</a></li>
+        <li><a href="../privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Live 60s revalidation from https://api.heycatch.ai/v1/articles/build-planner-template-goodnotes?key=hck_lv_c8fc952c1efb370b5f7aa1f4 -->
+  <script type="module">
+    import {
+      getSiteBasePath,
+      initBlogNavigation,
+      renderBlogArticlePage
+    } from '../assets/js/heycatch-blog.js';
+
+    const root = document.documentElement;
+    const toggleBtn = document.getElementById('theme-toggle-btn');
+    const savedTheme = localStorage.getItem('ns-theme');
+    if (savedTheme === 'light' || savedTheme === 'dark') {
+      root.setAttribute('data-theme', savedTheme);
+    }
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        const current = root.getAttribute('data-theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const effectiveDark = current ? current === 'dark' : systemDark;
+        const nextTheme = effectiveDark ? 'light' : 'dark';
+        root.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('ns-theme', nextTheme);
+      });
+    }
+
+    initBlogNavigation();
+    const mountEl = document.getElementById('blog-post-mount');
+    const basePath = getSiteBasePath();
+    renderBlogArticlePage(mountEl, "build-planner-template-goodnotes", { basePath });
+  </script>
+</body>
+</html>
